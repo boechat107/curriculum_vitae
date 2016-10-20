@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{avatar7.png} % Profile picture
+
+\cvname{Andre Boechat} % Your name
+\cvjobtitle{Software Engineer} % Job title/career
+
+\cvdate{6 November 1987} % Date of birth
+\cvaddress{Florianópolis, Brazil} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+55 48 96191575} % Phone number
+\cvsite{http://boechat107.github.io/} % Personal website
+\cvmail{boechat107@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME (side bar)
+%----------------------------------------------------------------------------------------
+
+% \aboutme{I'm a versatile computer engineer and passionate about developing automation
+% solutions, focusing on creating value and reducing costs. For now, I'm very interested 
+% in machine learning, web applications, scalable systems and functional  programming
+% languages.
+% }
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Ponctuality/2},
+        {Communication/5},
+        {OPS - Linux/3.5},
+        {Machine Learning/4},
+        {Web Development - Frontend/3.5},
+        {Web Development - Backend/5},
+        {Test Driven Development/4},
+        {Functional Programming/5}}
+
+%----------------------------------------------------------------------------------------
+%   LANGUAGES
+%----------------------------------------------------------------------------------------
+\languages{{Spanish/2.5},
+        {French/2.5},
+        {English/4.5},
+        {Portuguese/5.7}}
+        
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+% \skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+
+I'm a versatile computer engineer and passionate about developing automation
+solutions, focusing on creating value and reducing costs. For now, I'm very interested 
+in machine learning, web applications and functional  programming languages.
+
+\subsection{Technologies and Techniques}
+
+\begin{itemize}
+    \item Clojure (Clojurescript), Python, Java, Javascript, F\#, C, R, Matlab
+    \item Ring, Liberator, Reagent, Django, Aloe
+    \item Spark, Pandas, BoofCV, Caffe
+    \item PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ
+    \item Linux (Debian, Ubuntu), Docker
+    \item Vim, Latex, Git, code review (pull requests), TDD, BDD
+\end{itemize}
+
+\subsection{Personal Characteristics}
+
+\begin{itemize}
+    \item I learn fast
+    \item I'm always improving myself
+    \item I'm pragmatic, I keep in mind the business value of my work
+    \item I really appreciate to work with great people
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2016}{Brick Abode}{Florianópolis, Brazil}
+	{Development of web applications, server and client sides; OPS.
+	\emph{[Python, Javascript, F\#, MySQL, Aloe]}}
+	\twentyitem{2015-2016}{iTER Telemetry and Tracking}{Remotely}
+	{Architecture and development of a web application to visualize and monitor tracking
+	devices. The job included the development of a REST API, the system's server and
+	client sides and the necessary OPS.
+	\emph{[Clojure, Javascript, MySQL, MongoDB, Docker]}}
+	\twentyitem{2011-2015}{Neoway Business Solutions}{Florianópolis, Brazil}
+	{Main maintainer of captcha breaking project, the job applied machine learning, image
+	processing and crawlers to get access to public datasets.
+	\emph{[Java, Clojure, Python, Redis, RabbitMQ, PostgreSQL]}}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+% \section{interests}
+% 
+% The heroine and the dreamer of Wonderland; Alice is the principal character.
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2015-2016}{Ph.D. candidate, Computer Science [Interrupted]}{Luxembourg}
+	{Machine learning and data analysis for detection of non-technical losses in power 
+	distribution systems. \newline
+	\emph{[Python, R, Spark]}}
+	\twentyitem{2010-2012}{M.Sc., Automation and Systems Engineering}{UFSC, Florianópolis, Brazil}
+	{Development of data-driven models to monitor the calibration of oil well sensors. 
+	\emph{[Matlab, C]}}
+	\twentyitem{2005-2010}{B.Sc., Computer Engineering}{UFES, Vitória, Brazil}
+	{Foundations of computer science, electrical engineering and electronics.
+	\emph{[C, Haskell, VHDL, Assembly NASM (8086)]}}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%   HABITS
+%----------------------------------------------------------------------------------------
+
+\section{Habits \& Curiosities}
+
+\begin{itemize}
+    \item Amateur weight lifter
+    \item Basketball and soccer player
+    \item Gamer
+    \item Reader and (recently) podcast addicted 
+    \item Libertarian
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
+%%% Two arguments: date; title/description %%%%%%%%%%
+% \section{publications}
+% 
+% \begin{twentyshort} % Environment for a short list with no descriptions
+% 	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+% 	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+% 	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+% 	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+% 	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+% 	%\twentyitemshort{<dates>}{<title/description>}
+% \end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+% \section{awards}
+% 
+% \begin{twentyshort} % Environment for a short list with no descriptions
+% 	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+% 	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+% 	%\twentyitemshort{<dates>}{<title/description>}
+% \end{twentyshort}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
